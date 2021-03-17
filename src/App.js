@@ -1,11 +1,15 @@
-
+import React from "react";
 import './App.css';
+import Navbar from "./components/Navbar";
+import ContextFun from "./context/ContextProvider";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App">
-     <h1>hello everyone</h1>
-    </div>
+    <ContextFun>
+     <Navbar />
+     <Home />
+    </ContextFun>
   );
 }
 
